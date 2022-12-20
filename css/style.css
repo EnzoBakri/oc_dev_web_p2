@@ -181,6 +181,10 @@ form {
     color: #000000;
 }
 
+input::placeholder {
+    color: black;
+}
+
 input:focus {
     outline: none;
 }
