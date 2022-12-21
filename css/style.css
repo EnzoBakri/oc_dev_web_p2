@@ -1,5 +1,3 @@
-/***** DOCUMENT *****/
-
 * {
     margin: 0;
 }
@@ -13,8 +11,6 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
 }
-
-/***** TEXT SEMANTIC LEVELS *****/
 
 h1 {
     font-style: normal;
@@ -71,9 +67,13 @@ li {
     margin-bottom: 12px;
 }
 
-/******************** HEADER, FOOTER ********************/
+.star {
+    color: #0065FC;
+}
 
-    /************ Header ************/
+.grey-star {
+    color: #F2F2F2;
+}
 
 header {
     display: flex;
@@ -106,35 +106,6 @@ nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
-
-    /************ Footer ************/
-
-footer {
-    height: 225px;
-    margin-top: 61px;
-    padding: 0 53px;
-}
-
-.footer-frame {
-    height: 80%;
-    padding: 45px 0px 0px 72px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 239px;
-    background: #F2F2F2;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    gap: 20px;
-}
-
-/******************** SECTIONS ********************/
-    /************ Search ************/
 
 .search {
     padding: 0 55px;
@@ -214,25 +185,6 @@ span {
     position: absolute;
 }
 
-/* .form-submit-icon {
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 49px;
-    height: 49px;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    background-color: #0065FC;
-    color: #FFFFFF;
-}
-
-.form-submit-icon:hover {
-    cursor: pointer;
-} */
-
-    /************ Filter ************/
-
 .filter {
     margin-top: 32px;
     padding: 0 62px;
@@ -301,28 +253,29 @@ span {
     margin-left: 11px;
 }
 
-    /************ Offers ************/
-
 .offers {
     margin-top: 39px;
     padding: 0 50px;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    justify-content: space-between;
 }
-        /******* Main *******/
 
 .offers-main {
     width: 65%;
-    padding: 40px 40px;
+    height: 626px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 20px;
     background: #F2F2F2;
 }
 
-.offers-main a {
+.offers-main-title, .offers-main-addmore {
+    margin-left: 40px;
+}
+
+.offers-main-addmore a {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -333,6 +286,8 @@ span {
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
+    align-self: center;
+    width: 90%;
     height: 428px;
 }
 
@@ -340,7 +295,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 246px;
+    width: 30%;
     height: 199px;
     padding-bottom: 3px;
     background: #FFFFFF;
@@ -365,8 +320,7 @@ span {
 .main-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-left: 16px;
+    justify-content: space-evenly;
     width: 100%;
     height: 75px;
 }
@@ -374,8 +328,9 @@ span {
 .main-description-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-self: center;
     gap: 9px;
+    width: 90%;
 }
 
 .main-description-info p {
@@ -390,48 +345,48 @@ span {
 
 .main-description-grades {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    align-self: center;
     gap: 2px;
+    width: 90%;
 }
-
-        /******* Sponso *******/
 
 .offers-sponso {
     width: 30%;
-    padding: 40px 40px;
-    gap: 26px;
+    height: 626px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
     border-radius: 20px;
     background: #F2F2F2;
 }
 
-.offers-sponso-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 498px;
-}
-
 .offers-sponso-title {
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    align-self: center;
 }
 
 .offers-sponso-title i {
     color: #0065FC;
 }
 
-.sponso-card a {
+.offers-sponso-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    width: 85%;
+    height: 498px;
+}
+
+.sponso-card {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 15px;
-    width: 343px;
+    width: 100%;
     height: 144px;
     background: #FFFFFF;
     border-radius: 20px;
@@ -439,7 +394,7 @@ span {
 }
 
 .sponso-image {
-    width: 137px;
+    width: 40%;
     height: 100%;
 }
 
@@ -449,23 +404,23 @@ span {
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
     width: 100%;
-    height: 144px;
+    height: 100%;
 }
 
 .sponso-description {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 206px;
+    width: 60%;
     height: 100%;
 }
 
 .sponso-description-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-self: center;
     gap: 7px;
-    width: 169px;
+    width: 90%;
     height: 60px;
 }
 
@@ -483,10 +438,10 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-self: center;
     gap: 2px;
+    width: 90%;
 }
-
-    /************ Activities ************/
 
 .activity {
     margin-top: 60px;
@@ -500,20 +455,21 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     gap: 43px;
 }
 
 .activity-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 302px;
+    width: 25%;
     height: 445px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .activity-image {
+    width: 100%;
     height: 389px;
 }
 
@@ -525,91 +481,83 @@ span {
 }
 
 .activity-description {
-    height: 56px;
     width: 100%;
+    height: 56px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 .activity-description h2 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 90%;
     font-size: 16px;
     line-height: 19px;
 }
 
-    /******* Stars *******/
-
-.star {
-    color: #0065FC;
+footer {
+    height: 225px;
+    margin-top: 61px;
+    padding: 0 53px;
 }
 
-.grey-star {
-    color: #F2F2F2;
+.footer-frame {
+    height: 80%;
+    padding: 45px 0px 0px 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 239px;
+    background: #F2F2F2;
 }
 
-/******************** MEDIA QUERIES ********************/
-    /************ Tablet ************/
-
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 20px;
+}
 
 @media screen and (max-width: 992px) {
 
-    .search {
-        padding: 0 72px;
-    }
-
-    .filter {
+    .search, .filter, .offers, .activity {
         padding: 0 72px;
     }
 
     .filterbar {
-        width: 846px;
+        width: 100%;
     }
 
-        /******* Offers *******/
-
     .offers {
-        padding: 0px 72px;
         flex-direction: column;
         gap: 53px;
     }
 
     .offers-main {
-        width: 90%;
-        gap: 23px;
+        width: 100%;
     }
 
     .offers-sponso {
-        width: 90%;
-        padding: 40px 40px;
-        gap: 26px;
+        width: 100%;
+        height: 278px;
+        flex-direction: column;
     }
 
     .offers-sponso-title {
-        width: 100%;
+        width: 90%;
     }
 
     .offers-sponso-container {
         flex-direction: row;
-        gap: 5px;
-        width: 100%;
+        width: 90%;
         height: 144px;
     }
 
-    .sponso-card a {
-        width: 252px;
-    }
-
-    .sponso-image {
-        width: 106px;
-    }
-
-    .sponso-description {
-        width: 146px;
-    }
-
-    .sponso-description-info {
-        width: 90%;
+    .offers-sponso-container a {
+        width: 30%;
     }
 
     .sponso-description-info h2 {
@@ -622,11 +570,8 @@ span {
         line-height: 15px;
     }
 
-        /******* Activity *******/
-
     .activity {
         margin-top: 70px;
-        padding: 0 73px;
         gap: 34px;    
     }
 
@@ -646,14 +591,15 @@ span {
         width: 137px;
     }
     
-        /******* Footer *******/
+    /************ FOOTER ************/
 
     .footer-frame {
         gap: 82px;
     }
 }
 
-    /************ Phone ************/
+/******************** BREAKPOINT - 776px ********************/
+
 @media screen and (max-width: 768px) {
 
 }
