@@ -80,7 +80,6 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 126px;
 }
 
@@ -111,24 +110,25 @@ nav a:hover {
     /************ Footer ************/
 
 footer {
-    margin-top: 60px;
-    width: 100%;
-    height: 203px;
+    height: 225px;
+    margin-top: 61px;
+    padding: 0 53px;
 }
 
 .footer-frame {
+    height: 80%;
+    padding: 45px 0px 0px 72px;
     display: flex;
-    justify-content: space-between;
-    margin-left: 48px;
-    margin-right: 53px;
-    padding: 45px 327px 58px 70px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 239px;
     background: #F2F2F2;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
     gap: 20px;
 }
@@ -137,7 +137,9 @@ footer {
     /************ Search ************/
 
 .search {
-    padding-left: 55px;
+    padding: 0 55px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search p {
@@ -233,12 +235,13 @@ span {
 
 .filter {
     margin-top: 32px;
-    margin-left: 62px;
+    padding: 0 62px;
+    display: flex;
+    flex-direction: column;
 }
 
 .filterbar {
     width: 914px;
-    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -249,9 +252,8 @@ span {
 .filterbar-container { 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 4px 20px;
     width: 175px;
     height: 48px;
     border: 2px solid #D9D9D9;
@@ -266,10 +268,6 @@ span {
 .filterbar-container i {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
     color: #0065FC;
 }
 
@@ -281,9 +279,8 @@ span {
 .infobar {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    width: 447px;
-    height: 24px;
     margin-top: 38px;
 }
 
@@ -307,23 +304,20 @@ span {
     /************ Offers ************/
 
 .offers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 625px;
-    gap: 40px;
     margin-top: 39px;
     padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
-
         /******* Main *******/
 
 .offers-main {
+    width: 65%;
+    padding: 40px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px 40px;
-    width: 66%;
+    justify-content: space-between;
     border-radius: 20px;
     background: #F2F2F2;
 }
@@ -338,8 +332,8 @@ span {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-content: space-around;
-    height: 438px;
+    align-content: space-between;
+    height: 428px;
 }
 
 .main-card {
@@ -403,12 +397,12 @@ span {
         /******* Sponso *******/
 
 .offers-sponso {
+    width: 30%;
+    padding: 40px 40px;
+    gap: 26px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 40px 0px;
-    width: 33%;
     border-radius: 20px;
     background: #F2F2F2;
 }
@@ -417,7 +411,6 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 343px;
     height: 498px;
 }
 
@@ -426,7 +419,7 @@ span {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 343px;
+    width: 100%;
 }
 
 .offers-sponso-title i {
@@ -496,12 +489,11 @@ span {
     /************ Activities ************/
 
 .activity {
+    margin-top: 60px;
+    padding: 0 53px;
+    gap: 18px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 493px;
-    margin-top: 60px;
-    padding: 0 50px;
 }
 
 .activity-main {
@@ -516,7 +508,7 @@ span {
     flex-direction: column;
     justify-content: flex-start;
     width: 302px;
-    height: 444.5px;
+    height: 445px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
@@ -533,7 +525,12 @@ span {
 }
 
 .activity-description {
-    padding: 20px 36px 21px 19px;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .activity-description h2 {
@@ -549,4 +546,114 @@ span {
 
 .grey-star {
     color: #F2F2F2;
+}
+
+/******************** MEDIA QUERIES ********************/
+    /************ Tablet ************/
+
+
+@media screen and (max-width: 992px) {
+
+    .search {
+        padding: 0 72px;
+    }
+
+    .filter {
+        padding: 0 72px;
+    }
+
+    .filterbar {
+        width: 846px;
+    }
+
+        /******* Offers *******/
+
+    .offers {
+        padding: 0px 72px;
+        flex-direction: column;
+        gap: 53px;
+    }
+
+    .offers-main {
+        width: 90%;
+        gap: 23px;
+    }
+
+    .offers-sponso {
+        width: 90%;
+        padding: 40px 40px;
+        gap: 26px;
+    }
+
+    .offers-sponso-title {
+        width: 100%;
+    }
+
+    .offers-sponso-container {
+        flex-direction: row;
+        gap: 5px;
+        width: 100%;
+        height: 144px;
+    }
+
+    .sponso-card a {
+        width: 252px;
+    }
+
+    .sponso-image {
+        width: 106px;
+    }
+
+    .sponso-description {
+        width: 146px;
+    }
+
+    .sponso-description-info {
+        width: 90%;
+    }
+
+    .sponso-description-info h2 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .sponso-description-info p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+        /******* Activity *******/
+
+    .activity {
+        margin-top: 70px;
+        padding: 0 73px;
+        gap: 34px;    
+    }
+
+    .activity-main {
+        gap: 50px;
+    }
+
+    .activity-card {
+        height: 267px;
+    }
+
+    .activity-image {
+        height: 211px;
+    }
+
+    .activity-description h2 {
+        width: 137px;
+    }
+    
+        /******* Footer *******/
+
+    .footer-frame {
+        gap: 82px;
+    }
+}
+
+    /************ Phone ************/
+@media screen and (max-width: 768px) {
+
 }
