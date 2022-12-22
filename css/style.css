@@ -63,6 +63,17 @@ li {
     margin-bottom: 12px;
 }
 
+ button {
+    color: #FFFFFF;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 /* ==================== STARS ==================== */
 
 .star {
@@ -77,7 +88,6 @@ li {
 
 header {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -119,36 +129,32 @@ nav a:hover {
 .search {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .search-description {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    width: auto;
+}
+
+.search-description p {
+    margin-top: 8px;
 }
 
 .search-container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
+    margin-top: 20px;
     height: 50px;
 }
 
 form {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 40%;
+    width: auto;
 }
 
 .form-label {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 70%;
+    width: 100%;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     background: #F2F2F2;
@@ -159,11 +165,11 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 25%;
 }
 
 .form-label input {
-    width: 80%;
+    width: 100%;
     height: 95%;
     padding-left: 17px;
     border: transparent; 
@@ -177,103 +183,76 @@ input:focus {
     outline: none;
 }
 
-.form-submit {
+.form-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    color: #FFFFFF;
-    background-color: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    width: auto;
 }
 
-.form-submit-icon {
+.form-button span {
+    display: flex;
+}
+
+.form-button i {
     display: none;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    color: #FFFFFF;
-    background-color: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-}
-
-.form-submit:hover {
-    cursor: pointer;
-}
-
-.form-submit-icon:hover {
-    cursor: pointer;
 }
 
 /* ==================== FILTER ==================== */
 
 .filter {
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
+    margin-top: 32px;
 }
 
 .filterbar {
-    width: 70%;
-    height: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
 }
 
 .filterbar-description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 10%;
-    height: 100%;
+    width: 8%;
 }
 
 .filterbar-wrapper {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
-    width: 90%;
+    width: 60%;
     height: 100%;
 }
 
-.filterbar-container { 
+.filterbar-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: auto;
     padding: 20px;
-    gap: 10px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     box-sizing: border-box;
 }
 
+.filterbar-container i {
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+
 .filterbar-container:hover {
     background-color: #DEEBFF;
 }
 
-.filterbar-container i {
-    display: flex;
-    justify-content: center;
-    color: #0065FC;
-}
-
 .infobar {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     margin-top: 38px;
+    width: auto;
 }
 
 .infobar i {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 24px;
@@ -563,10 +542,10 @@ footer {
     }
 
     form {
-        width: 80%;
+        width: 50%;
     }
 
-    .filterbar {
+    .filterbar-wrapper {
         width: 90%;
     }
 
@@ -663,29 +642,21 @@ footer {
 
     main {
         margin-top: 31px;
+        padding: 0 20px;
     }
 
     /********** SEARCH **********/
-
-    .search {
-        gap: 36px;
-    }
 
     form {
         width: 100%;
     }
 
-    .form-submit {
+    .form-button span {
         display: none;
     }
 
-    .form-label {
-        width: 80%;
-    }
-
-    .form-submit-icon {
+    .form-button i {
         display: flex;
-        width: 20%;
     }
 
     /********** FILTER **********/
