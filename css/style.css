@@ -1,3 +1,5 @@
+/* ==================== DOCUMENT ==================== */
+
 * {
     margin: 0;
 }
@@ -9,41 +11,35 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: white;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+main {
+    padding: 0 55px;
+}
+
+/* ==================== TEXT SEMANTIC ==================== */
+
+h1, h2, h3, input {
+    font-style: normal;
+    font-weight: 700;
 }
 
 h1 {
-    font-style: normal;
-    font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    color: #000000;
     margin: 0;
 }
 
-
-h2 {
-    font-style: normal;
-    font-weight: 700;
+h2, input {
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
 }
 
 h3 {
-    font-style: normal;
-    font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-    color: #000000;
-}
-
-p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
 }
 
 p, a {
@@ -67,6 +63,8 @@ li {
     margin-bottom: 12px;
 }
 
+/* ==================== STARS ==================== */
+
 .star {
     color: #0065FC;
 }
@@ -75,31 +73,40 @@ li {
     color: #F2F2F2;
 }
 
+/* ==================== HEADER ==================== */
+
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     height: 126px;
 }
 
-header img {
+.logo {
+    display: flex;
+    flex-direction: column;
     margin-left: 55px;
-    width: 61.09px;
-    height: 19px;
+    width: 5%;
+}
+
+.logo img {
+    width: 100%;
 }
 
 nav {
     display: flex;
-    width: 324px;
+    width: 23%;
     height: 100%;
 }
 
 nav a {
-    border-top: 2px solid transparent;
-    padding-top: 48px;
-    text-align: center;
-    width: 162px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 nav a:hover {
@@ -107,51 +114,59 @@ nav a:hover {
     color: #0065FC;
 }
 
+/* ==================== SEARCH ==================== */
+
 .search {
-    padding: 0 55px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.search p {
-    margin-top: 8px;
+.search-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .search-container {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
 }
 
 form {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    width: 40%;
 }
 
 .form-label {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    width: 284px;
-    height: 49px;
+    width: 70%;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     background: #F2F2F2;
 }
 
 .form-label i {
-    margin: 16px 18px 15px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 
 .form-label input {
-    width: 282px;
-    height: 49px;
-    border: 1px solid #F2F2F2;
+    width: 80%;
+    height: 95%;
     padding-left: 17px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
+    border: transparent; 
 }
 
 input::placeholder {
@@ -165,49 +180,74 @@ input:focus {
 .form-submit {
     display: flex;
     justify-content: center;
-    width: 132px;
-    height: 49px;
+    align-items: center;
+    width: 30%;
+    color: #FFFFFF;
+    background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    background-color: #0065FC;
+}
+
+.form-submit-icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
     color: #FFFFFF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .form-submit:hover {
     cursor: pointer;
 }
 
-span {
-    position: absolute;
+.form-submit-icon:hover {
+    cursor: pointer;
 }
+
+/* ==================== FILTER ==================== */
 
 .filter {
     margin-top: 32px;
-    padding: 0 62px;
     display: flex;
     flex-direction: column;
 }
 
 .filterbar {
-    width: 914px;
+    width: 70%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.filterbar-description {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    width: 10%;
+    height: 100%;
+}
+
+.filterbar-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
 }
 
 .filterbar-container { 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 175px;
-    height: 48px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    gap: 10px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     box-sizing: border-box;
@@ -221,11 +261,6 @@ span {
     display: flex;
     justify-content: center;
     color: #0065FC;
-}
-
-#filterbar-container-animals {
-    width: 235px;
-    height: 48px;
 }
 
 .infobar {
@@ -253,9 +288,10 @@ span {
     margin-left: 11px;
 }
 
+/* ==================== OFFERS ==================== */
+
 .offers {
     margin-top: 39px;
-    padding: 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -443,12 +479,13 @@ span {
     width: 90%;
 }
 
+/* ==================== ACTIVITY ==================== */
+
 .activity {
-    margin-top: 60px;
-    padding: 0 53px;
-    gap: 18px;
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
+    gap: 18px;
 }
 
 .activity-main {
@@ -497,19 +534,16 @@ span {
     line-height: 19px;
 }
 
-footer {
-    height: 225px;
-    margin-top: 61px;
-    padding: 0 53px;
-}
+/* ==================== FOOTER ==================== */
 
-.footer-frame {
-    height: 80%;
-    padding: 45px 0px 0px 72px;
+footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 239px;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 225px;
+    margin: 60px 48px 0 48px;
     background: #F2F2F2;
 }
 
@@ -517,18 +551,23 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
+    width: 22%;
+    height: 60%;
     gap: 20px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
 
-    .search, .filter, .offers, .activity {
-        padding: 0 72px;
+    main {
+        padding: 0 70px;
+    }
+
+    form {
+        width: 80%;
     }
 
     .filterbar {
-        width: 100%;
+        width: 90%;
     }
 
     .offers {
@@ -590,16 +629,77 @@ footer {
     .activity-description h2 {
         width: 137px;
     }
-    
-    /************ FOOTER ************/
-
-    .footer-frame {
-        gap: 82px;
-    }
 }
 
-/******************** BREAKPOINT - 776px ********************/
+/******************** BREAKPOINT - 768px ********************/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
+    /********** HEADER **********/
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 129px;
+    }
+
+    .logo {
+        width: 10%;
+        justify-content: flex-end;
+        margin: 0;
+        height: 50px;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav a:hover {
+        border-top: transparent;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    /********** MAIN **********/
+
+    main {
+        margin-top: 31px;
+    }
+
+    /********** SEARCH **********/
+
+    .search {
+        gap: 36px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form-submit {
+        display: none;
+    }
+
+    .form-label {
+        width: 80%;
+    }
+
+    .form-submit-icon {
+        display: flex;
+        width: 20%;
+    }
+
+    /********** FILTER **********/
+
+    .filter {
+        margin-top: 34px;
+    }
+
+    .filterbar {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .filterbar-wrapper {
+        flex-flow: row wrap;
+    }
 }

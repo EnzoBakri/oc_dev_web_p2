@@ -13,7 +13,9 @@
     </head>
     <body>
         <header> <!-- HEADER -->
-            <img src="images/logo/Booki.png" alt="Logo Booki">
+            <div class="logo">
+                <img src="images/logo/Booki.png" alt="Logo Booki">
+            </div>
             <nav>
                 <a href="#">Hébergements</a></li>
                 <a href="#">Activités</a></li>
@@ -21,46 +23,52 @@
         </header>
         <main>
             <section class="search"> <!-- RECHERCHER -->
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                    <div class="search-container">
-                        <form method="#" action="#">
-                            <label for="location" class="form-label">
-                                <i class="fa-solid fa-location-dot fa-lg"></i>
-                                <input type="text" name="location" id="location" placeholder="Marseille, France">
-                            </label>
-                            <input type="submit" value="Rechercher" class="form-submit">
-                            <!-- <i class="fa-solid fa-magnifying-glass fa-lg form-submit-icon"></i> -->
-                        </form>
-                    </div>
+                <div class="search-description">
+                    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div class="search-container">
+                    <form method="#" action="#">
+                        <label for="location" class="form-label">
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <input type="text" name="location" id="location" placeholder="Marseille, France">
+                        </label>
+                        <input type="submit" value="Rechercher" class="form-submit">
+                        <i class="fa-solid fa-magnifying-glass fa-lg form-submit-icon"></i>
+                    </form>
+                </div>
             </section>
             <section class="filter"> <!-- FILTRES -->
                 <div class="filterbar">
-                    <h2>Filtres</h2>
-                    <a href="#">
-                        <div class="filterbar-container">
-                            <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                            <h3>Économique</h3>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="filterbar-container">
-                            <i class="fa-solid fa-person fa-lg"></i>
-                            <h3>Familial</h3>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="filterbar-container">
-                            <i class="fa-solid fa-heart fa-lg"></i>
-                            <h3>Romantique</h3>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="filterbar-container" id="filterbar-container-animals">
-                            <i class="fa-solid fa-dog fa-lg"></i>
-                            <h3>Animaux autorisés</h3>
-                        </div>
-                    </a>
+                    <div class="filterbar-description">
+                        <h2>Filtres</h2>
+                    </div>
+                    <div class="filterbar-wrapper">
+                        <a href="#">
+                            <div class="filterbar-container">
+                                <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                                <h3>Économique</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="filterbar-container">
+                                <i class="fa-solid fa-person fa-lg"></i>
+                                <h3>Familial</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="filterbar-container">
+                                <i class="fa-solid fa-heart fa-lg"></i>
+                                <h3>Romantique</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="filterbar-container">
+                                <i class="fa-solid fa-dog fa-lg"></i>
+                                <h3>Animaux autorisés</h3>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="infobar">
                     <i class="fa-solid fa-info"></i>
@@ -404,29 +412,27 @@
             </section>
         </main>
         <footer> <!-- FOOTER -->
-            <div class="footer-frame">
-                <div class="footer-container">
-                    <h2>À propos</h2>
-                    <ul>
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
-                    </ul>
-                </div>
-                <div class="footer-container">
-                    <h2>Nos hébergements</h2>
-                    <ul>
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Proposer votre hôtel</a></li>
-                    </ul>
-                </div>
-                <div class="footer-container">
-                    <h2>Assistance</h2>
-                    <ul>
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                    </ul>
-                </div>
+            <div class="footer-container">
+                <h2>À propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
             </div>
         </footer>
     </body>
