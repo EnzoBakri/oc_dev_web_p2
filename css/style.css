@@ -38,7 +38,7 @@ h2, input {
 }
 
 h3 {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 20px;
 }
 
@@ -78,6 +78,7 @@ li {
 
 .star {
     color: #0065FC;
+    width: 20%;
 }
 
 .grey-star {
@@ -98,11 +99,11 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 55px;
-    width: 5%;
+    width: auto;
 }
 
 .logo img {
-    width: 100%;
+    width: 40%;
 }
 
 nav {
@@ -145,16 +146,17 @@ nav a:hover {
     display: flex;
     margin-top: 20px;
     height: 50px;
+    width: auto;
 }
 
 form {
     display: flex;
-    width: auto;
+    width: 100%;
 }
 
 .form-label {
     display: flex;
-    width: 100%;
+    width: 25%;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     background: #F2F2F2;
@@ -165,11 +167,11 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 16%;
 }
 
 .form-label input {
-    width: 100%;
+    width: 84%;
     height: 95%;
     padding-left: 17px;
     border: transparent; 
@@ -220,7 +222,7 @@ input:focus {
 .filterbar-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 65%;
     height: 100%;
 }
 
@@ -238,7 +240,6 @@ input:focus {
     color: #0065FC;
     margin-right: 10px;
 }
-
 
 .filterbar-container:hover {
     background-color: #DEEBFF;
@@ -272,7 +273,6 @@ input:focus {
 .offers {
     margin-top: 39px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -284,9 +284,10 @@ input:focus {
     justify-content: space-evenly;
     border-radius: 20px;
     background: #F2F2F2;
+    order: 1;
 }
 
-.offers-main-title, .offers-main-addmore {
+.offers-main h1, .offers-main-addmore {
     margin-left: 40px;
 }
 
@@ -298,7 +299,7 @@ input:focus {
 
 .offers-main-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     align-self: center;
@@ -336,19 +337,19 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 100%;
+    width: auto;
     height: 75px;
+    padding-left: 15px;
 }
 
 .main-description-info {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    gap: 9px;
-    width: 90%;
+    width: auto;
 }
 
 .main-description-info p {
+    margin-top: 7px;
     font-size: 14px;
     line-height: 16px;
 }
@@ -360,26 +361,24 @@ input:focus {
 
 .main-description-grades {
     display: flex;
-    flex-direction: row;
-    align-self: center;
-    gap: 2px;
-    width: 90%;
+    align-self: flex-start;
+    width: auto;
 }
 
 .offers-sponso {
-    width: 30%;
-    height: 626px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 30%;
+    height: 626px;
     border-radius: 20px;
     background: #F2F2F2;
+    order: 2;
 }
 
 .offers-sponso-title {
     width: 85%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-self: center;
@@ -394,13 +393,12 @@ input:focus {
     flex-direction: column;
     justify-content: space-between;
     align-self: center;
-    width: 85%;
+    width: 83%;
     height: 498px;
 }
 
 .sponso-card {
     display: flex;
-    flex-direction: row;
     width: 100%;
     height: 144px;
     background: #FFFFFF;
@@ -425,17 +423,16 @@ input:focus {
 .sponso-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 60%;
     height: 100%;
+    padding-left: 15px;
 }
 
 .sponso-description-info {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    gap: 7px;
-    width: 90%;
+    width: auto;
     height: 60px;
 }
 
@@ -447,15 +444,13 @@ input:focus {
 .sponso-description-info p {
     font-size: 14px;
     line-height: 16px;
+    margin-top: 7px;
 }
 
 .sponso-description-grades {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-self: center;
-    gap: 2px;
-    width: 90%;
+    align-self: flex-start;
+    width: auto;
 }
 
 /* ==================== ACTIVITY ==================== */
@@ -464,21 +459,19 @@ input:focus {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    gap: 18px;
 }
 
 .activity-main {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    margin-top : 18px;
     width: 100%;
-    gap: 43px;
 }
 
 .activity-card {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 22%;
     height: 445px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -517,7 +510,6 @@ input:focus {
 
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: auto;
@@ -532,26 +524,43 @@ footer {
     justify-content: flex-start;
     width: 22%;
     height: 60%;
-    gap: 20px;
 }
 
+.footer-container ul {
+    margin-top: 20px;
+}
+
+/******************** BREAKPOINT - 991px ********************/
+
 @media screen and (max-width: 991px) {
+
+    /********** MAIN **********/
 
     main {
         padding: 0 70px;
     }
 
-    form {
-        width: 50%;
+    /********** SEARCH **********/
+
+    .form-label {
+        width: 40%;
     }
+
+    /********** FILTER **********/
 
     .filterbar-wrapper {
         width: 90%;
     }
 
+    .filterbar-container h3 {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    /********** OFFERS **********/
+
     .offers {
         flex-direction: column;
-        gap: 53px;
     }
 
     .offers-main {
@@ -562,6 +571,7 @@ footer {
         width: 100%;
         height: 278px;
         flex-direction: column;
+        margin-top: 53px;
     }
 
     .offers-sponso-title {
@@ -575,7 +585,7 @@ footer {
     }
 
     .offers-sponso-container a {
-        width: 30%;
+        width: 32%;
     }
 
     .sponso-description-info h2 {
@@ -588,13 +598,14 @@ footer {
         line-height: 15px;
     }
 
+    /********** ACTIVITY **********/
+
     .activity {
-        margin-top: 70px;
-        gap: 34px;    
+        margin-top: 70px; 
     }
 
     .activity-main {
-        gap: 50px;
+        margin-top: 34px;
     }
 
     .activity-card {
@@ -606,7 +617,9 @@ footer {
     }
 
     .activity-description h2 {
-        width: 137px;
+        width: auto;
+        align-self: flex-start;
+        margin-left: 19px;
     }
 }
 
@@ -623,12 +636,12 @@ footer {
     }
 
     .logo {
-        width: 10%;
-        justify-content: flex-end;
+        display: flex;
+        align-items: center;
         margin: 0;
-        height: 50px;
+        margin-top: 21px;
     }
-    
+
     nav {
         width: 100%;
     }
@@ -642,13 +655,29 @@ footer {
 
     main {
         margin-top: 31px;
-        padding: 0 20px;
+        padding: 0;
     }
 
     /********** SEARCH **********/
 
-    form {
-        width: 100%;
+    .search, .filter {
+        padding: 0 22px;
+    }
+
+    .form-label {
+        width: 90%;
+    }
+
+    .form-label i {
+        width: 10%;
+    }
+
+    .form-label input {
+        width: 90%;
+    }
+
+    .form-button {
+        width: 10%;
     }
 
     .form-button span {
@@ -666,11 +695,139 @@ footer {
     }
 
     .filterbar {
-        width: 100%;
+        display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+    }
+
+    .filterbar-description {
+        width: 100%;
     }
 
     .filterbar-wrapper {
-        flex-flow: row wrap;
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .top {
+        display: flex;
+        order: 1;
+        width: 47%;
+    }
+
+    .down {
+        margin-top: 17px;
+        display: flex;
+        order: 2;
+        width: 47%;
+    }
+
+    .filterbar-container {
+        height: 50px;
+    }
+
+    .filterbar-container h3 {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .infobar {
+        margin-top: 43px;
+    }
+
+    /********** OFFERS **********/
+    
+    .offers-sponso {
+        order: 1;
+        margin: 0;
+        height: 580px;
+        border-radius: 0;
+    }
+
+    .offers-sponso-container {
+        display: flex;
+        flex-direction: column;
+        height: 498px;
+    }
+
+    .offers-sponso-container a {
+        width: 100%;
+        align-self: center;
+    }
+
+    .sponso-description-info h2 {
+        font-size: 16px;
+    }
+
+    .sponso-description-info p {
+        font-size: 14px;
+    }
+
+    .offers-main {
+        order: 2;
+        margin-top: 28px;
+        height: auto;
+        background-color: #FFFFFF;
+    }
+
+    .offers-main-container {
+        margin-top: 19px;
+    }
+
+    .offers-main-container {
+        height: auto;
+    }
+
+    .main-card {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .main-description-info h2 {
+        font-size: 16px;
+    }
+
+    .main-description-info p {
+        font-size: 14px;
+    }
+
+    .offers-main-addmore {
+        display: none;
+    }
+
+    /********** ACTIVITY **********/
+
+    .activity {
+        margin-top: 93px;
+        margin-bottom: 80px;
+        padding: 0 22px;
+    }
+
+    .activity-main {
+        flex-wrap: wrap;
+    }
+
+    .activity-card {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    /********** FOOTER **********/
+
+    footer {
+        margin: 0;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 45px 60px 0 60px;
+    }
+
+    .footer-container {
+        margin-bottom: 40px;
+        width: auto;
     }
 }
