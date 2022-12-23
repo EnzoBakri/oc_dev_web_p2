@@ -432,7 +432,7 @@ input:focus {
 .sponso-description-info {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 90%;
     height: 60px;
 }
 
@@ -755,7 +755,7 @@ footer {
     }
 
     .offers-sponso-container a {
-        width: 100%;
+        width: 90%;
         align-self: center;
     }
 
@@ -776,6 +776,7 @@ footer {
 
     .offers-main-container {
         margin-top: 19px;
+        justify-content: center;
     }
 
     .offers-main-container {
@@ -783,7 +784,7 @@ footer {
     }
 
     .main-card {
-        width: 100%;
+        width: 80%;
         margin-bottom: 12px;
     }
 
@@ -809,10 +810,11 @@ footer {
 
     .activity-main {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .activity-card {
-        width: 100%;
+        width: 80%;
         margin-bottom: 24px;
     }
 
