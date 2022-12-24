@@ -91,24 +91,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 126px;
 }
 
 .logo {
     display: flex;
     flex-direction: column;
-    margin-left: 55px;
+    justify-content: center;
+    padding-left: 55px;
     width: auto;
+    height: 100%;
 }
 
 .logo img {
-    width: 40%;
+    width: 35%;
 }
 
 nav {
     display: flex;
-    width: 23%;
+    justify-content: flex-end;
+    width: 80%;
     height: 100%;
 }
 
@@ -117,7 +119,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 20%;
 }
 
 nav a:hover {
@@ -135,7 +137,7 @@ nav a:hover {
 .search-description {
     display: flex;
     flex-direction: column;
-    width: auto;
+    /* width: auto; */
 }
 
 .search-description p {
@@ -146,7 +148,7 @@ nav a:hover {
     display: flex;
     margin-top: 20px;
     height: 50px;
-    width: auto;
+    /* width: auto; */
 }
 
 form {
@@ -168,6 +170,7 @@ form {
     justify-content: center;
     align-items: center;
     width: 16%;
+    cursor: pointer;
 }
 
 .form-label input {
@@ -190,6 +193,8 @@ input:focus {
     justify-content: center;
     align-items: center;
     width: auto;
+    padding: 20px;
+    cursor: pointer;
 }
 
 .form-button span {
@@ -210,7 +215,6 @@ input:focus {
 
 .filterbar {
     display: flex;
-    width: 100%;
     height: 50px;
     align-items: center;
 }
@@ -249,7 +253,6 @@ input:focus {
     display: flex;
     align-items: center;
     margin-top: 38px;
-    width: auto;
 }
 
 .infobar i {
@@ -277,18 +280,19 @@ input:focus {
 }
 
 .offers-main {
-    width: 65%;
+    width: 67%;
     height: 626px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    order: 1;
     border-radius: 20px;
     background: #F2F2F2;
-    order: 1;
 }
 
-.offers-main h1, .offers-main-addmore {
-    margin-left: 40px;
+.offers-main-title, .offers-main-addmore {
+    width: 90%;
+    align-self: center;
 }
 
 .offers-main-addmore a {
@@ -310,8 +314,7 @@ input:focus {
 .main-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 30%;
+    width: 31%;
     height: 199px;
     padding-bottom: 3px;
     background: #FFFFFF;
@@ -320,7 +323,6 @@ input:focus {
 }
 
 .main-image {
-    width: 100%;
     height: 124px;
 }
 
@@ -337,7 +339,6 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: auto;
     height: 75px;
     padding-left: 15px;
 }
@@ -345,7 +346,6 @@ input:focus {
 .main-description-info {
     display: flex;
     flex-direction: column;
-    width: auto;
 }
 
 .main-description-info p {
@@ -393,7 +393,7 @@ input:focus {
     flex-direction: column;
     justify-content: space-between;
     align-self: center;
-    width: 83%;
+    width: 85%;
     height: 498px;
 }
 
@@ -407,7 +407,7 @@ input:focus {
 }
 
 .sponso-image {
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 
@@ -424,7 +424,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 60%;
+    width: 55%;
     height: 100%;
     padding-left: 15px;
 }
@@ -432,7 +432,7 @@ input:focus {
 .sponso-description-info {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: 60px;
 }
 
@@ -465,7 +465,6 @@ input:focus {
     display: flex;
     justify-content: space-between;
     margin-top : 18px;
-    width: 100%;
 }
 
 .activity-card {
@@ -478,7 +477,6 @@ input:focus {
 }
 
 .activity-image {
-    width: 100%;
     height: 389px;
 }
 
@@ -490,7 +488,6 @@ input:focus {
 }
 
 .activity-description {
-    width: 100%;
     height: 56px;
     display: flex;
     flex-direction: column;
@@ -499,7 +496,6 @@ input:focus {
 
 .activity-description h2 {
     display: flex;
-    flex-direction: row;
     align-self: center;
     width: 90%;
     font-size: 16px;
@@ -632,20 +628,21 @@ footer {
     header {
         display: flex;
         flex-direction: column;
-        height: 129px;
     }
 
     .logo {
-        display: flex;
         align-items: center;
-        margin: 0;
-        margin-top: 21px;
+        padding: 0;
     }
-
+    
     nav {
         width: 100%;
     }
     
+    nav a {
+        width: 50%;
+    }
+
     nav a:hover {
         border-top: transparent;
         border-bottom: 3px solid #0065FC;
@@ -777,9 +774,6 @@ footer {
     .offers-main-container {
         margin-top: 19px;
         justify-content: center;
-    }
-
-    .offers-main-container {
         height: auto;
     }
 
