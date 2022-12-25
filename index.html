@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<!----------- HTML ----------->
 <html lang="fr">
+    <!----------- HEAD ----------->
     <head>
         <title>Booki</title>
         <meta charset="utf-8">
@@ -11,22 +13,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6bef5837e3.js" crossorigin="anonymous"></script>
     </head>
+
+    <!----------- BODY ----------->
     <body>
-        <header> <!-- HEADER -->
+        <!----------- HEADER ----------->
+        <header>
             <div class="logo">
                 <img src="images/logo/Booki.png" alt="Logo Booki">
             </div>
+
             <nav>
                 <a href="#offers">Hébergements</a>
                 <a href="#activity">Activités</a>
             </nav>
         </header>
+        <!----------- MAIN ----------->
         <main>
-            <section class="search"> <!-- RECHERCHER -->
+            <!----------- SEARCH ----------->
+            <section class="search">
+
                 <div class="search-description">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
+
                 <div class="search-container">
                     <form method="GET" action="#">
                         <label for="location" class="form-label">
@@ -39,12 +49,18 @@
                         </button>
                     </form>
                 </div>
+
             </section>
-            <section class="filter"> <!-- FILTRES -->
+
+            <!----------- FILTER ----------->
+            <section class="filter">
+
                 <div class="filterbar">
+
                     <div class="filterbar-description">
                         <h2>Filtres</h2>
                     </div>
+
                     <div class="filterbar-wrapper">
                         <a href="#" class="filterbar-container top">
                             <i class="fa-solid fa-money-bill-wave fa-lg"></i>
@@ -63,48 +79,59 @@
                             <h3>Animaux autorisés</h3>
                         </a>
                     </div>
+                
                 </div>
+
                 <div class="infobar">
                     <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
+
             </section>
-            <section class="offers" id="offers"> <!-- HEBERGEMENTS -->
-                <div class="offers-main"> <!-- Hébergements à Marseille -->
+
+            <!----------- OFFERS ----------->
+            <section class="offers" id="offers">
+
+                <!----------- OFFERS MAIN ----------->
+                <div class="offers-main">
+
                     <div class="offers-main-title">
                         <h1>Hébergements à Marseille</h1>
                     </div> 
+
                     <div class="offers-main-container">
-                            <article class="main-card">
-                                <a href="#">
-                                    <div class="main-image">
-                                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre d'auberge">
+
+                        <article class="main-card">
+                            <a href="#">
+                                <div class="main-image">
+                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre d'auberge">
+                                </div>
+                                <div class="main-description">
+                                    <div class="main-description-info">
+                                        <h2>Auberge La Canebière</h2>
+                                        <p>Nuit à partir de 25€</p>
                                     </div>
-                                    <div class="main-description">
-                                        <div class="main-description-info">
-                                            <h2>Auberge La Canebière</h2>
-                                            <p>Nuit à partir de 25€</p>
+                                    <div class="main-description-grades">
+                                        <div class="star">
+                                            <i class="fa-solid fa-star fa-xs"></i>
                                         </div>
-                                        <div class="main-description-grades">
-                                            <div class="star">
-                                                <i class="fa-solid fa-star fa-xs"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="fa-solid fa-star fa-xs"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="fa-solid fa-star fa-xs"></i>
-                                            </div>
-                                            <div class="star">
-                                                <i class="fa-solid fa-star fa-xs"></i>
-                                            </div>
-                                            <div class="star grey-star">
-                                                <i class="fa-solid fa-star fa-xs"></i>
-                                            </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star fa-xs"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star fa-xs"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star fa-xs"></i>
+                                        </div>
+                                        <div class="star grey-star">
+                                            <i class="fa-solid fa-star fa-xs"></i>
                                         </div>
                                     </div>
-                                </a>                             
-                            </article>
+                                </div>
+                            </a>
+                        </article>
+
                         <article class="main-card">
                             <a href="#">
                                 <div class="main-image">
@@ -135,6 +162,7 @@
                                 </div>
                             </a>                             
                         </article>
+
                         <article class="main-card">
                             <a href="#">
                                 <div class="main-image">
@@ -165,6 +193,7 @@
                                 </div>
                             </a>                             
                         </article>
+
                         <article class="main-card">
                             <a href="#">
                                 <div class="main-image">
@@ -195,6 +224,7 @@
                                 </div>
                             </a>                             
                         </article>
+
                         <article class="main-card">
                             <a href="#">
                                 <div class="main-image">
@@ -225,6 +255,7 @@
                                 </div>
                             </a>                             
                         </article>
+
                         <article class="main-card">
                             <a href="#">
                                 <div class="main-image">
@@ -256,16 +287,23 @@
                             </a>                             
                         </article>
                     </div>
+
                     <div class="offers-main-addmore">
                         <a href="#">Afficher plus</a>
-                    </div>        
+                    </div>
+
                 </div>
-                <div class="offers-sponso"> <!-- Les plus populaires -->
+
+                <!----------- OFFERS SPONSO ----------->
+                <div class="offers-sponso">
+
                     <div class="offers-sponso-title">
                         <h1>Les plus populaires</h1>
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
+
                     <div class="offers-sponso-container">
+
                         <a href="#">
                             <article class="sponso-card">
                                 <div class="sponso-image">
@@ -296,6 +334,7 @@
                                 </div>                                  
                         </article>
                         </a>
+
                         <a href="#">
                             <article class="sponso-card">
                                 <div class="sponso-image">
@@ -326,6 +365,7 @@
                                 </div>                             
                         </article>
                         </a>
+
                         <a href="#">
                             <article class="sponso-card">
                                 <div class="sponso-image">
@@ -356,12 +396,20 @@
                                 </div>                                
                             </article>
                         </a>
-                    </div> 
+
+                    </div>
+
                 </div>
+
             </section>
-            <section class="activity" id="activity"> <!-- ACTIVITES -->
+
+            <!----------- <ACTIVITY> ----------->
+            <section class="activity" id="activity">
+
                 <h1>Activités à Marseille</h1>
+
                 <div class="activity-main">
+
                     <article class="activity-card">
                         <a href="#">
                             <div class="activity-image">
@@ -372,6 +420,7 @@
                             </div>
                         </a>
                     </article>
+
                     <article class="activity-card">
                         <a href="#">
                             <div class="activity-image">
@@ -382,6 +431,7 @@
                             </div>
                         </a>
                     </article>
+
                     <article class="activity-card">
                         <a href="#">
                             <div class="activity-image">
@@ -392,6 +442,7 @@
                             </div>
                         </a>
                     </article>
+
                     <article class="activity-card">
                         <a href="#">
                             <div class="activity-image">
@@ -402,10 +453,17 @@
                             </div>
                         </a>
                     </article>
+
                 </div>
+
             </section>
+
         </main>
-        <footer> <!-- FOOTER -->
+
+
+        <!----------- FOOTER ----------->
+        <footer>
+
             <div class="footer-container">
                 <h2>À propos</h2>
                 <ul>
@@ -414,6 +472,7 @@
                     <li><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
+
             <div class="footer-container">
                 <h2>Nos hébergements</h2>
                 <ul>
@@ -421,6 +480,7 @@
                     <li><a href="#">Proposer votre hôtel</a></li>
                 </ul>
             </div>
+
             <div class="footer-container">
                 <h2>Assistance</h2>
                 <ul>
@@ -428,6 +488,9 @@
                     <li><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
+
         </footer>
+
     </body>
+
 </html>
