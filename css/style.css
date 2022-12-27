@@ -94,7 +94,7 @@ header {
     height: 126px;
 }
 
-.logo {
+#logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +103,7 @@ header {
     height: 100%;
 }
 
-.logo img {
+#logo img {
     width: 35%;
 }
 
@@ -137,7 +137,6 @@ nav a:hover {
 .search-description {
     display: flex;
     flex-direction: column;
-    /* width: auto; */
 }
 
 .search-description p {
@@ -148,7 +147,6 @@ nav a:hover {
     display: flex;
     margin-top: 20px;
     height: 50px;
-    /* width: auto; */
 }
 
 form {
@@ -156,7 +154,7 @@ form {
     width: 100%;
 }
 
-.form-label {
+#form-label {
     display: flex;
     width: 25%;
     border: 1px solid #F2F2F2;
@@ -164,7 +162,7 @@ form {
     background: #F2F2F2;
 }
 
-.form-label i {
+#form-label i {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +171,7 @@ form {
     cursor: pointer;
 }
 
-.form-label input {
+#form-label input {
     width: 84%;
     height: 95%;
     padding-left: 17px;
@@ -188,7 +186,7 @@ input:focus {
     outline: none;
 }
 
-.form-button {
+#form-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,11 +195,11 @@ input:focus {
     cursor: pointer;
 }
 
-.form-button span {
+#form-button span {
     display: flex;
 }
 
-.form-button i {
+#form-button i {
     display: none;
 }
 
@@ -538,7 +536,7 @@ footer {
 
     /********** SEARCH **********/
 
-    .form-label {
+    #form-label {
         width: 40%;
     }
 
@@ -630,7 +628,7 @@ footer {
         flex-direction: column;
     }
 
-    .logo {
+    #logo {
         align-items: center;
         padding: 0;
     }
@@ -661,27 +659,27 @@ footer {
         padding: 0 22px;
     }
 
-    .form-label {
+    #form-label {
         width: 90%;
     }
 
-    .form-label i {
+    #form-label i {
         width: 10%;
     }
 
-    .form-label input {
+    #form-label input {
         width: 90%;
     }
 
-    .form-button {
+    #form-button {
         width: 10%;
     }
 
-    .form-button span {
+    #form-button span {
         display: none;
     }
 
-    .form-button i {
+    #form-button i {
         display: flex;
     }
 
