@@ -1,4 +1,4 @@
-/* ==================== DOCUMENT ==================== */
+/* DOCUMENT */
 
 * {
     margin: 0;
@@ -19,7 +19,7 @@ main {
     padding: 0 55px;
 }
 
-/* ==================== TEXT SEMANTIC ==================== */
+/* TEXT SEMANTIC */
 
 h1, h2, h3, input {
     font-style: normal;
@@ -74,7 +74,7 @@ li {
     line-height: 21px;
 }
 
-/* ==================== STARS ==================== */
+/* STARS */
 
 .star {
     color: #0065FC;
@@ -85,7 +85,7 @@ li {
     color: #F2F2F2;
 }
 
-/* ==================== HEADER ==================== */
+/* HEADER */
 
 header {
     display: flex;
@@ -127,7 +127,7 @@ nav a:hover {
     color: #0065FC;
 }
 
-/* ==================== SEARCH ==================== */
+/* SEARCH */
 
 .search {
     display: flex;
@@ -203,7 +203,7 @@ input:focus {
     display: none;
 }
 
-/* ==================== FILTER ==================== */
+/* FILTER */
 
 .filter {
     display: flex;
@@ -269,7 +269,7 @@ input:focus {
     margin-left: 11px;
 }
 
-/* ==================== OFFERS ==================== */
+/* OFFERS */
 
 .offers {
     margin-top: 39px;
@@ -318,6 +318,11 @@ input:focus {
     background: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-card a {
+    width: 100%;
+    height: 100%;
 }
 
 .main-image {
@@ -451,7 +456,7 @@ input:focus {
     width: auto;
 }
 
-/* ==================== ACTIVITY ==================== */
+/* ACTIVITY */
 
 .activity {
     display: flex;
@@ -500,7 +505,7 @@ input:focus {
     line-height: 19px;
 }
 
-/* ==================== FOOTER ==================== */
+/* FOOTER */
 
 footer {
     display: flex;
@@ -524,23 +529,25 @@ footer {
     margin-top: 20px;
 }
 
-/******************** BREAKPOINT - 991px ********************/
+/* BREAKPOINTS */
+
+/* TABLET */
 
 @media screen and (max-width: 991.98px) {
 
-    /********** MAIN **********/
+    /* MAIN */
 
     main {
         padding: 0 70px;
     }
 
-    /********** SEARCH **********/
+    /* SEARCH */
 
     #form-label {
         width: 40%;
     }
 
-    /********** FILTER **********/
+    /* FILTER */
 
     .filterbar-wrapper {
         width: 90%;
@@ -551,7 +558,7 @@ footer {
         line-height: 13px;
     }
 
-    /********** OFFERS **********/
+    /* OFFERS */
 
     .offers {
         flex-direction: column;
@@ -592,7 +599,7 @@ footer {
         line-height: 15px;
     }
 
-    /********** ACTIVITY **********/
+    /* ACTIVITY */
 
     .activity {
         margin-top: 70px; 
@@ -617,11 +624,13 @@ footer {
     }
 }
 
-/******************** BREAKPOINT - 768px ********************/
+/* BREAKPOINT */
+
+/* PHONE */
 
 @media screen and (max-width: 767.98px) {
 
-    /********** HEADER **********/
+    /* HEADER */
 
     header {
         display: flex;
@@ -646,14 +655,14 @@ footer {
         border-bottom: 3px solid #0065FC;
     }
 
-    /********** MAIN **********/
+    /* MAIN */
 
     main {
         margin-top: 31px;
         padding: 0;
     }
 
-    /********** SEARCH **********/
+    /* SEARCH */
 
     .search, .filter {
         padding: 0 22px;
@@ -683,7 +692,7 @@ footer {
         display: flex;
     }
 
-    /********** FILTER **********/
+    /* FILTER */
 
     .filter {
         margin-top: 34px;
@@ -734,7 +743,7 @@ footer {
         margin-top: 43px;
     }
 
-    /********** OFFERS **********/
+    /* OFFERS */
     
     .offers-sponso {
         order: 1;
@@ -792,7 +801,7 @@ footer {
         display: none;
     }
 
-    /********** ACTIVITY **********/
+    /* ACTIVITY */
 
     .activity {
         margin-top: 93px;
@@ -810,7 +819,7 @@ footer {
         margin-bottom: 24px;
     }
 
-    /********** FOOTER **********/
+    /* FOOTER */
 
     footer {
         margin: 0;
